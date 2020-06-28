@@ -1,11 +1,10 @@
-.page-footer {
+.page-footer__container {
   padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: $bgFooterColor;
 
   @media screen and (max-width: 767px) {
-    display: inline-flex;
     text-align: center;
   }
 }

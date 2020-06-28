@@ -571,17 +571,14 @@ body.modal-open {
   margin-right: 10px;
 }
 
-.page-footer {
+.page-footer__container {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
 }
 
 @media screen and (max-width: 767px) {
-  .page-footer {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+  .page-footer__container {
     text-align: center;
   }
 }
