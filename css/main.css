@@ -883,7 +883,7 @@ body.modal-open {
 }
 
 .form-field__input:focus {
-  border: 1px solid var(--accent-color);
+  border: 1px solid #2196f3;
   outline: none;
 }
 
@@ -1079,7 +1079,7 @@ body.modal-open {
 
 .strengths__text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 767px) {
