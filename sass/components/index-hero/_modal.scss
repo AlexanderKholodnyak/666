@@ -87,6 +87,7 @@
 
   @include transition($property: border);
 
+  &:hover,
   &:focus {
     border: 1px solid $accentColor;
     outline: none;
