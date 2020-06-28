@@ -8,6 +8,10 @@
   text-decoration: none;
 
   color: $accentColor;
+
+  @media screen and (max-width: 480px) {
+    display: inline-block;
+  }
 }
 .logo__secondary-color {
   color: $mainDarkColor;

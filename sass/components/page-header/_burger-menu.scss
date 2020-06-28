@@ -1,0 +1,30 @@
+.burger-button {
+  @extend %button;
+  display: inline-flex;
+
+  color: $mainDarkColor;
+
+  border: none;
+
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+
+  // закрытие и открытие меню - замена иконок
+  & .burger-opened {
+    display: none;
+  }
+  &.is-open .burger-opened {
+    display: block;
+  }
+  &.is-open .burger-closed {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}

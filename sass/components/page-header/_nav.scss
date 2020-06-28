@@ -1,27 +1,64 @@
-.header-navigation__logo {
-  margin-right: 85px;
-}
+// .header-navigation__logo {
+//   margin-right: 85px;
+// }
 .page-header__navigation {
   @include vCenteredFlex();
+
+  @media screen and (max-width: 767px) {
+    // position: relative;
+    justify-content: space-between;
+  }
 }
-.header-navigation__nav-menu {
-  @extend %list;
-  @include vCenteredFlex();
-}
-.nav-menu {
+// обертка навигации мобильного бургер меню
+.header-navigation__wrapper {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
   line-height: 1.14;
+
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+
+    display: none;
+    padding: 60px 0px;
+
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+
+    background-color: $whiteColor;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 4px 8px rgba(0, 0, 0, 0.04);
+
+    &.is-open {
+      display: block;
+    }
+  }
+}
+.header-navigation__nav-menu {
+  @extend %list;
+  // @include vCenteredFlex();
+}
+.nav-menu {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 .nav-menu__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
 }
 .nav-menu__link {
   @extend %link;
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   color: $mainDarkColor;
 
@@ -30,6 +67,15 @@
   &:hover,
   &:focus {
     color: $accentColor;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: inline-block;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 .nav-menu__link--current-page {
@@ -50,5 +96,45 @@
     background-color: $accentColor;
 
     border-radius: 2px;
+
+    @media screen and (max-width: 767px) {
+      bottom: -8px;
+    }
   }
+}
+// contacts
+.header-navigation__nav-contacts {
+  @extend %list;
+  // @include vCenteredFlex();
+  // margin-left: auto;
+}
+.nav-contacts__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
+}
+.nav-contacts__link {
+  @extend %link;
+  display: flex;
+  align-items: center;
+
+  color: $textColor;
+
+  @include transition($property: color);
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: inline-flex;
+  }
+}
+.nav-contacts__icon {
+  margin-right: 10px;
 }
