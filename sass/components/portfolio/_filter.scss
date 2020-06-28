@@ -1,0 +1,31 @@
+.portfolio__filter {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portfolio-filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+.portfolio-filter__button {
+  @extend %button;
+  padding: 5px 21px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+
+  color: $mainDarkColor;
+  background-color: $bgColor;
+
+  border: 1px solid transparent;
+  border-radius: $mainBorderRadius;
+
+  @include twoTransitions($propertyI: color, $propertyII: background-color);
+
+  &:hover,
+  &:focus {
+    color: $whiteColor;
+    background-color: $accentColor;
+  }
+}

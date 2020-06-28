@@ -1,0 +1,29 @@
+.page-footer__contacts {
+  margin-right: 69px;
+}
+.contacts {
+  padding-right: 15px;
+}
+.contacts__logo {
+  margin-bottom: 20px;
+}
+// Address styles
+.address {
+  font-style: normal;
+  color: $whiteColor;
+}
+.address__street {
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+.address__contacts {
+  @extend %list;
+}
+.address__link {
+  @extend %link;
+  color: rgba(255, 255, 255, 0.6);
+}
+.address__link--margin {
+  display: block;
+  margin-bottom: 9px;
+}

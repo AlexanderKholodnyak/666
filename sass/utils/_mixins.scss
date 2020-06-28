@@ -1,0 +1,18 @@
+@mixin vCenteredFlex($type: flex) {
+  display: $type;
+  align-items: center;
+}
+
+@mixin transition($property, $time: 250ms, $timingFunction: $mainBezier) {
+  transition: $property $time $timingFunction;
+}
+
+@mixin twoTransitions(
+  $propertyI,
+  $propertyII,
+  $time: 250ms,
+  $timingFunction: $mainBezier
+) {
+  transition: $propertyI $time $timingFunction,
+    $propertyII $time $timingFunction;
+}

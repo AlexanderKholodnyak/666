@@ -1,0 +1,54 @@
+.header-navigation__logo {
+  margin-right: 85px;
+}
+.page-header__navigation {
+  @include vCenteredFlex();
+}
+.header-navigation__nav-menu {
+  @extend %list;
+  @include vCenteredFlex();
+}
+.nav-menu {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+}
+.nav-menu__item:not(:last-child) {
+  margin-right: 50px;
+}
+.nav-menu__link {
+  @extend %link;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $mainDarkColor;
+
+  @include transition($property: color);
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+.nav-menu__link--current-page {
+  position: relative;
+
+  color: $accentColor;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    height: 4px;
+    width: 100%;
+
+    background-color: $accentColor;
+
+    border-radius: 2px;
+  }
+}

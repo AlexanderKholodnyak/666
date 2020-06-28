@@ -1,0 +1,22 @@
+.logo {
+  display: block;
+
+  font-family: $logoFont;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  color: $accentColor;
+}
+.logo__secondary-color {
+  color: $mainDarkColor;
+}
+// Footer - logo
+.logo--secondary {
+  font-size: 22px;
+  line-height: 1.18;
+}
+.logo__secondary-color--footer {
+  color: $whiteColor;
+}

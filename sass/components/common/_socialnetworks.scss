@@ -1,0 +1,29 @@
+.socialnetworks {
+  @extend %list;
+}
+.socialnetworks__link {
+  @include vCenteredFlex();
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  color: $svgColor;
+
+  border-radius: 50%;
+
+  @include twoTransitions($propertyI: color, $propertyII: background-color);
+
+  &:hover,
+  &:focus {
+    color: $whiteColor;
+
+    background-color: $accentColor;
+  }
+}
+// footer colorization
+.socialnetworks__link--footer-color {
+  color: $whiteColor;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}

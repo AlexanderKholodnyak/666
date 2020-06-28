@@ -1,0 +1,39 @@
+.clients {
+  @extend %section;
+}
+.clients__container {
+  @extend %container;
+}
+.clients__title {
+  @extend %section-title;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.clients__list {
+  @extend %list;
+  display: flex;
+}
+.clients-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+.client-card {
+  @include vCenteredFlex();
+  justify-content: center;
+
+  width: 170px;
+  height: 90px;
+
+  color: $svgColor;
+
+  border: 1px solid $svgColor;
+  border-radius: $mainBorderRadius;
+
+  @include twoTransitions($propertyI: color, $propertyII: border);
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+
+    border: 1px solid $accentColor;
+  }
+}
