@@ -51,14 +51,18 @@
     margin-bottom: 60px;
   }
 }
-.nav-menu__item:not(:last-child) {
+.nav-menu__item {
   @media screen and (max-width: 767px) {
     margin-bottom: 40px;
+    &--current-page {
+      margin-bottom: 52px;
+    }
   }
-
-  @media screen and (min-width: 768px) {
-    margin-right: 50px;
-  }
+  // &:not(:last-child) {
+  //       @media screen and (min-width: 768px) {
+  //     margin-right: 50px;
+  //   }
+  // }
 }
 .nav-menu__link {
   @extend %link;
