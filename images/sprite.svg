@@ -81,7 +81,7 @@
   <path  style="fill: currentColor" d="M14.131 1.667v11.666H1.766V1.667h12.365zm0-1.667H1.766C.795 0 0 .75 0 1.667v11.666C0 14.25.795 15 1.766 15h12.365c.972 0 1.767-.75 1.767-1.667V1.667C15.898.75 15.103 0 14.13 0z"/>
 </symbol>
 <symbol id="callback-policy-on" viewBox="0 0 15 15">
-  <rect style="fill: currentColor" rx="2"/>
+  <rect style="fill: currentColor" width="15" height="15" rx="2"/>
   <path style="fill: #fff" stroke="#fff" stroke-width=".2" d="M2.957 7.752l-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422z" />
 </symbol>
 <symbol id="modal-close" viewBox="0 0 18 18">
