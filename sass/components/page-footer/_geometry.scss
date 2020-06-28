@@ -1,11 +1,15 @@
 .page-footer {
-  min-width: 1230px;
   padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: $bgFooterColor;
+
+  @media screen and (max-width: 767px) {
+    display: inline-flex;
+    text-align: center;
+  }
 }
-.page-footer__wrap {
-  display: flex;
-  align-items: baseline;
-}
+// .page-footer__wrap {
+//   display: flex;
+//   align-items: baseline;
+// }

@@ -1,9 +1,13 @@
 .page-footer__contacts {
-  margin-right: 69px;
+  // margin-right: 69px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
-.contacts {
-  padding-right: 15px;
-}
+// .contacts {
+//   padding-right: 15px;
+// }
 .contacts__logo {
   margin-bottom: 20px;
 }
@@ -14,7 +18,8 @@
 }
 .address__street {
   margin-top: 0;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+  // margin-bottom: 9px;
 }
 .address__contacts {
   @extend %list;
@@ -25,5 +30,6 @@
 }
 .address__link--margin {
   display: block;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+  // margin-bottom: 9px;
 }
