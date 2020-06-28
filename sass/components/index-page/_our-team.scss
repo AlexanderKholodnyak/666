@@ -7,7 +7,7 @@
 }
 .team__list {
   @extend %list;
-  display: flex;
+  // display: flex;
 }
 .team-card__item {
   padding-bottom: 24px;
@@ -22,7 +22,7 @@
   overflow: hidden;
 
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 .team-card__image {
@@ -51,4 +51,7 @@
 .team-card__socialnetworks {
   display: flex;
   justify-content: center;
+}
+.socialnetworks__item:not(:last-child) {
+  margin-right: 10px;
 }

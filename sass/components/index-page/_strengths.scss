@@ -1,33 +1,25 @@
-.our-strenghts__container {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    bottom: -94px;
-    left: 0;
-    content: "";
-    width: 100%;
-
-    border-bottom: 1px solid #ececec;
-  }
-}
 .our-strenghts__title {
   @extend %visually-hidden;
 }
 .our-strenghts__list {
   @extend %list;
-  display: flex;
+  // display: flex;
 }
-.strengths__item:not(:last-child) {
-  margin-right: 30px;
-}
+// .strengths__item:not(:last-child) {
+//   margin-right: 30px;
+// }
 .strengths__svg-wrap {
-  padding: 25px 100px;
+  padding: 25px 0px;
+  // padding: 25px 100px;
   margin-bottom: 30px;
 
   background-color: $bgColor;
 
   border-radius: $mainBorderRadius;
+}
+.strengths__icon {
+  display: block;
+  margin: 0 auto;
 }
 .strengths__title {
   margin-top: 0;
@@ -36,6 +28,7 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 
   color: $mainDarkColor;
 }

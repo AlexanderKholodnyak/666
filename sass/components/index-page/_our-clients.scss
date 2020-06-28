@@ -1,19 +1,27 @@
 .clients__title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  // margin-bottom: 50px;
 }
 .clients__list {
   @extend %list;
   display: flex;
+  flex-wrap: wrap;
+
+  margin: -15px;
 }
-.clients-list__item:not(:last-child) {
-  margin-right: 30px;
+.clients-list__item {
+  margin: 15px;
+  width: calc((100% - 60px) / 2);
 }
+// .clients-list__item:not(:last-child) {
+//   margin-right: 30px;
+// }
 .client-card {
   @include vCenteredFlex();
   justify-content: center;
 
-  width: 170px;
+  // width: 170px;
   height: 90px;
 
   color: $svgColor;

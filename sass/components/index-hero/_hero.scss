@@ -1,13 +1,17 @@
 .hero {
-  max-width: 1600px;
+  max-width: 480px;
+  // max-width: 1600px;
   padding-top: 118px;
   padding-bottom: 118px;
+  // для центрирования максимальной ширины героя
+  margin-left: auto;
+  margin-right: auto;
 
   text-align: center;
 
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
+      rgba(26, 29, 63, 0.8)
     ),
     url(../images/hero-mobile.jpg);
   background-color: #000000;
