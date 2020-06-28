@@ -27,23 +27,3 @@
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
-// website container
-%container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-// main page-section
-%section {
-  min-width: 1230px;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-// main page-section title
-%section-title {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-
-  color: $mainDarkColor;
-}

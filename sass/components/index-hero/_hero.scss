@@ -12,9 +12,6 @@
     url(../images/hero.jpg);
   background-color: #000000;
 }
-.hero__container {
-  @extend %container;
-}
 .hero__title {
   margin-top: 0;
   margin-bottom: 32px;

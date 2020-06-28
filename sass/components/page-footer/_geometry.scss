@@ -5,9 +5,6 @@
 
   background-color: $bgFooterColor;
 }
-.page-footer__container {
-  @extend %container;
-}
 .page-footer__wrap {
   display: flex;
   align-items: baseline;

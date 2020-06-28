@@ -283,25 +283,6 @@ summary {
   overflow: hidden;
 }
 
-.page-header__container, .page-footer__container, .hero__container, .our-strenghts__container, .services__container, .team__container, .clients__container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.our-strenghts, .services, .team, .clients {
-  min-width: 1230px;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.services__title, .team__title, .clients__title {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: #212121;
-}
-
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -309,6 +290,25 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
   background-color: #ffffff;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  min-width: 1200px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: #212121;
 }
 
 .logo {

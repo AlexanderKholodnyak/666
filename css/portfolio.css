@@ -272,18 +272,6 @@ summary {
   cursor: pointer;
 }
 
-.page-header__container, .page-footer__container, .portfolio__container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.portfolio {
-  min-width: 1230px;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -291,6 +279,25 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
   background-color: #ffffff;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  min-width: 1200px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: #212121;
 }
 
 .logo {

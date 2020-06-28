@@ -1,8 +1,4 @@
-.our-strenghts {
-  @extend %section;
-}
 .our-strenghts__container {
-  @extend %container;
   position: relative;
 
   &::before {

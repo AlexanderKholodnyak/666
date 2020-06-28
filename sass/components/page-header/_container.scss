@@ -1,5 +1,4 @@
 .page-header__container {
-  @extend %container;
   @include vCenteredFlex();
 }
 .page-header {
