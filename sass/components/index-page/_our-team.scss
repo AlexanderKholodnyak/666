@@ -7,7 +7,12 @@
 }
 .team__list {
   @extend %list;
-  // display: flex;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 .team-card__item {
   padding-bottom: 24px;
@@ -21,8 +26,15 @@
   border-radius: $mainBorderRadius;
   overflow: hidden;
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
   }
 }
 .team-card__image {

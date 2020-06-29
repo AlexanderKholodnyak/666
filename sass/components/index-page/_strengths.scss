@@ -3,15 +3,32 @@
 }
 .our-strenghts__list {
   @extend %list;
-  // display: flex;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+.strengths__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
 }
 // .strengths__item:not(:last-child) {
 //   margin-right: 30px;
 // }
 .strengths__svg-wrap {
   padding: 25px 0px;
-  // padding: 25px 100px;
   margin-bottom: 30px;
+  // padding: 25px 100px;
 
   background-color: $bgColor;
 
@@ -31,8 +48,12 @@
   text-align: center;
 
   color: $mainDarkColor;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 .strengths__text {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
