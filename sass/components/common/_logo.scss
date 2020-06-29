@@ -4,9 +4,7 @@
   font-family: $logoFont;
   font-weight: 700;
   font-size: 24px;
-  // font-size: 26px;
   line-height: 1.17;
-  // line-height: 1.19;
   text-decoration: none;
 
   color: $accentColor;
@@ -14,15 +12,15 @@
   @media screen and (max-width: 767px) {
     display: inline-block;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .logo__secondary-color {
   color: $mainDarkColor;
 }
-// Footer - logo
-// .logo--secondary {
-//   font-size: 22px;
-//   line-height: 1.18;
-// }
 .logo__secondary-color--footer {
   color: $whiteColor;
 }

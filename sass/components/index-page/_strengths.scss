@@ -21,14 +21,15 @@
     margin: 15px;
     width: calc((100% - 60px) / 2);
   }
+
+  @media screen and (min-width: 1200px) {
+    margin: 15px;
+    width: calc((100% - 120px) / 4);
+  }
 }
-// .strengths__item:not(:last-child) {
-//   margin-right: 30px;
-// }
 .strengths__svg-wrap {
   padding: 25px 0px;
   margin-bottom: 30px;
-  // padding: 25px 100px;
 
   background-color: $bgColor;
 

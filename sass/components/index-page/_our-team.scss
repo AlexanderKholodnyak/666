@@ -36,6 +36,10 @@
     margin: 15px;
     width: calc((100% - 60px) / 2);
   }
+
+  @media screen and (min-width: 1120px) {
+    width: calc((100% - 120px) / 4);
+  }
 }
 .team-card__image {
   display: block;

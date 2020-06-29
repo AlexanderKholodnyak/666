@@ -1,26 +1,33 @@
+.page-footer {
+  @media screen and (min-width: 1200px) {
+    background-color: $bgFooterColor;
+  }
+}
 .page-footer__container {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  background-color: $bgFooterColor;
+  @media screen and (max-width: 1199px) {
+    background-color: $bgFooterColor;
+  }
 
   @media screen and (max-width: 767px) {
     text-align: center;
   }
 }
 .page-footer__wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  // align-items: baseline;
-  text-align: center;
-}
-// .page-footer__tablet-wrap {
-//   @media screen and (min-width: 768px) and (max-width: 1199px) {
-//     display: inline-flex;
-//     margin-bottom: 60px;
-//     width: 100%;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 
-//     text-align: center;
-//   }
-// }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+  }
+}

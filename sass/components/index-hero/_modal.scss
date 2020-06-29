@@ -46,8 +46,8 @@
 
   @include transition($property: transform);
 
-  @media screen and (min-width: 768px) {
-    width: 528px;
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
   }
 }
 .callback-form__header {
@@ -195,9 +195,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  // transform: translateY(4px);
 
   color: $mainDarkColor;
+
+  @media screen and (min-width: 1200px) {
+    transform: translateY(4px);
+  }
 }
 .form-policy__icon-on {
   @include transition($property: opacity);

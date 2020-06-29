@@ -6,6 +6,11 @@
     padding-top: 21px;
     padding-bottom: 21px;
   }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
 .page-header {
   border-bottom: 1px solid #ececec;

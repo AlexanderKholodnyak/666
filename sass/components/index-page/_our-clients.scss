@@ -1,7 +1,10 @@
 .clients__title {
   margin-top: 0;
   margin-bottom: 30px;
-  // margin-bottom: 50px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 .clients__list {
   @extend %list;
@@ -17,15 +20,15 @@
   @media screen and (min-width: 768px) {
     width: calc((100% - 90px) / 3);
   }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 180px) / 6);
+  }
 }
-// .clients-list__item:not(:last-child) {
-//   margin-right: 30px;
-// }
 .client-card {
   @include vCenteredFlex();
   justify-content: center;
 
-  // width: 170px;
   height: 90px;
 
   color: $svgColor;

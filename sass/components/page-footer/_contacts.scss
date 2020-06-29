@@ -1,13 +1,13 @@
 .page-footer__contacts {
-  // margin-right: 69px;
-
   @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 69px;
+    padding-right: 15px;
+  }
 }
-// .contacts {
-//   padding-right: 15px;
-// }
 .contacts__logo {
   margin-bottom: 20px;
 }
@@ -19,11 +19,14 @@
 .address__street {
   margin-top: 0;
   margin-bottom: 8px;
-  // margin-bottom: 9px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-right: 8px;
     padding-left: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
   }
 }
 .address__contacts {
@@ -36,5 +39,8 @@
 .address__link--margin {
   display: block;
   margin-bottom: 8px;
-  // margin-bottom: 9px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }

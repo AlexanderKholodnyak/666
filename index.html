@@ -259,33 +259,69 @@
           <h2 class="section-title services__title">Чем мы занимаемся</h2>
           <ul class="services-list services__list">
             <li class="services-list__item">
-              <img
-                class="services-list__image"
-                src="./images/services-laptop.jpg"
-                alt="ноутбук"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/services-laptop-370.webp 370w,
+                    ./images/services-laptop-740.webp 740w
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="services-list__image"
+                  srcset="
+                    ./images/services-laptop-370.jpg 370w,
+                    ./images/services-laptop-740.jpg 740w
+                  "
+                  src=".images/services-laptop-370.jpg"
+                  alt="Десктопные приложения"
+                  sizes="(min-width: 1200px) 33vw"
+                />
+              </picture>
               <h3 class="services-list__name">Десктопные приложения</h3>
             </li>
             <li class="services-list__item">
-              <img
-                class="services-list__image"
-                src="./images/services-mobile.jpg"
-                alt="мобильный телефон"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/services-mobile-370.webp 370w,
+                    ./images/services-mobile-740.webp 740w
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="services-list__image"
+                  srcset="
+                    ./images/services-mobile-370.jpg 370w,
+                    ./images/services-mobile-740.jpg 740w
+                  "
+                  src=".images/services-mobile-370.jpg"
+                  alt="Мобильные приложения"
+                  sizes="(min-width: 1200px) 33vw"
+                />
+              </picture>
               <h3 class="services-list__name">Мобильные приложения</h3>
             </li>
             <li class="services-list__item">
-              <img
-                class="services-list__image"
-                src="./images/services-design.jpg"
-                alt="монитор с красивым дизайном"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/services-design-370.webp 370w,
+                    ./images/services-design-740.webp 740w
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="services-list__image"
+                  srcset="
+                    ./images/services-design-370.jpg 370w,
+                    ./images/services-design-740.jpg 740w
+                  "
+                  src=".images/services-design-370.jpg"
+                  alt="Дизайн"
+                  sizes="(min-width: 1200px) 33vw"
+                />
+              </picture>
               <h3 class="services-list__name">Дизайнерские решения</h3>
             </li>
           </ul>
