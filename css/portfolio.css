@@ -255,17 +255,17 @@ summary {
   display: list-item;
 }
 
-.nav-menu__link, .nav-contacts__link, .address__link {
+.nav-menu__link, .nav-contacts__link, .address__link, .portfolio-card {
   text-decoration: none;
 }
 
-.socialnetworks, .header-navigation__nav-menu, .header-navigation__nav-contacts, .address__contacts {
+.socialnetworks, .header-navigation__nav-menu, .header-navigation__nav-contacts, .address__contacts, .portfolio__filter, .portfolio__content {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.burger-button, .subscription__button {
+.burger-button, .subscription__button, .portfolio-filter__button {
   display: inline-block;
   padding: 0;
   font-family: inherit;
@@ -704,5 +704,140 @@ body.modal-open {
 
 .subscription__icon {
   margin-left: 10px;
+}
+
+.portfolio__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.portfolio-filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-filter__item:first-child {
+    margin-bottom: 15px;
+  }
+}
+
+.portfolio-filter__button {
+  padding: 5px 21px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  color: #212121;
+  background-color: #f5f4fa;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-filter__button:hover, .portfolio-filter__button:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.portfolio__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
+}
+
+.portfolio-content__item {
+  width: calc((100% - 90px) / 3);
+  margin: 15px;
+}
+
+.portfolio-card {
+  display: block;
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-card:hover, .portfolio-card:focus {
+  -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+          box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.portfolio-card__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.portfolio-card__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-card__overlay {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 15px;
+  font-size: 18px;
+  line-height: 1.56;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+  -webkit-transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-card:hover .portfolio-card__overlay,
+.portfolio-card:focus .portfolio-card__overlay {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
+}
+
+.portfolio-card__description {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.portfolio-card__title {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.portfolio-card__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.88;
+  color: #757575;
 }
 /*# sourceMappingURL=portfolio.css.map */
