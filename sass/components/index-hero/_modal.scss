@@ -19,7 +19,7 @@
 .backdrop---is-hidden .callback-form {
   transform: translate(-50%, -35%) scale(0.7);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     transform: translate(-50%, -50%) scale(0.7);
   }
 }
@@ -29,7 +29,7 @@
   top: 50%;
   transform: translate(-50%, -35%) scale(1);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     transform: translate(-50%, -50%) scale(1);
   }
 
@@ -182,9 +182,8 @@
   margin-left: auto;
   margin-right: auto;
   padding-left: 24px;
-}
-.form-policy__acceptance {
-  @media screen and (max-width: 767px) {
+
+  @media screen and (max-width: 1199px) {
     font-size: 12px;
     line-height: 1.17;
   }
@@ -196,7 +195,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateY(4px);
+  // transform: translateY(4px);
 
   color: $mainDarkColor;
 }

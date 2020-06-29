@@ -46,6 +46,7 @@
 
   @media screen and (min-width: 768px) {
     @include vCenteredFlex();
+    flex-grow: 1;
 
     font-size: 14px;
     line-height: 1.14;
@@ -119,6 +120,10 @@
     @media screen and (max-width: 767px) {
       bottom: -8px;
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      bottom: -34px;
+    }
   }
 }
 // contacts
@@ -133,6 +138,10 @@
 .nav-contacts__item:not(:last-child) {
   @media screen and (max-width: 767px) {
     margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-bottom: 10px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -155,6 +164,11 @@
 
   @media screen and (max-width: 767px) {
     display: inline-flex;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.17;
   }
 }
 .nav-contacts__icon {

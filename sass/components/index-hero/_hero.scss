@@ -17,19 +17,41 @@
   background-color: #000000;
   background-size: cover;
 
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(26, 29, 63, 0.8)
+      ),
+      url(../images/hero-tablet.jpg);
+    background-color: #000000;
+  }
+
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
   }
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+  @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (min-resolution: 192dpi),
+    screen and (max-width: 767px) and (min-resolution: 2dppx) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
       url(../images/hero-mobile@2x.jpg);
+    background-color: #000000;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi),
+    screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../images/hero-tablet@2x.jpg);
     background-color: #000000;
   }
 }
@@ -45,7 +67,7 @@
 
   color: $whiteColor;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
 
