@@ -1462,7 +1462,7 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1200px) {
   .team-card__item {
     width: calc((100% - 120px) / 4);
   }
