@@ -1,33 +1,40 @@
 .portfolio__content {
   @extend %list;
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 .portfolio-content__item {
-  width: calc((100% - 90px) / 3);
-  margin: 15px;
-}
-.portfolio-card {
-  @extend %link;
-  display: block;
-
+  margin-bottom: 30px;
   @include transition($property: box-shadow);
 
   &:hover,
   &:focus {
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
       0px 1px 1px rgba(0, 0, 0, 0.12);
-    border-radius: $mainBorderRadius;
   }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
+}
+.portfolio-card {
+  @extend %link;
+  display: block;
 }
 .portfolio-card__image {
   display: block;
   max-width: 100%;
   height: auto;
-
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
 }
 .portfolio-card__thumb {
   position: relative;
@@ -51,8 +58,6 @@
 
   color: $whiteColor;
   background-color: rgba(33, 150, 243, 0.9);
-  border-top-left-radius: $mainBorderRadius;
-  border-top-right-radius: $mainBorderRadius;
 
   transform: translateY(100%);
   opacity: 0;
@@ -76,8 +81,6 @@
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 .portfolio-card__title {
   margin-top: 0;
@@ -86,6 +89,10 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  // обрезка текста с замещением того что не влазит на '...'
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
 
   color: $mainDarkColor;
 }
