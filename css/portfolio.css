@@ -580,7 +580,7 @@ body.modal-open {
 .nav-menu__link--current-page::after {
   content: "";
   position: absolute;
-  bottom: -8;
+  bottom: -8px;
   left: 0;
   height: 4px;
   width: 100%;
