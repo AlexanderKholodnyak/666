@@ -7,8 +7,23 @@
   @media screen and (max-width: 767px) {
     text-align: center;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-right: 76px;
+    padding-left: 76px;
+  }
 }
-// .page-footer__wrap {
-//   display: flex;
-//   align-items: baseline;
-// }
+.page-footer__wrap {
+  // display: flex;
+  // align-items: baseline;
+  text-align: center;
+}
+.page-footer__tablet-wrap {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: inline-flex;
+    margin-bottom: 60px;
+    width: 100%;
+
+    text-align: center;
+  }
+}

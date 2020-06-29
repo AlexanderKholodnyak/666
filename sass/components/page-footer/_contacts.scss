@@ -4,6 +4,10 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 165px;
+  }
 }
 // .contacts {
 //   padding-right: 15px;
@@ -20,6 +24,11 @@
   margin-top: 0;
   margin-bottom: 8px;
   // margin-bottom: 9px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
 }
 .address__contacts {
   @extend %list;

@@ -657,9 +657,37 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer__container {
+    padding-right: 76px;
+    padding-left: 76px;
+  }
+}
+
+.page-footer__wrap {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer__tablet-wrap {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-bottom: 60px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .page-footer__contacts {
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer__contacts {
+    margin-right: 165px;
   }
 }
 
@@ -677,6 +705,13 @@ body.modal-open {
   margin-bottom: 8px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .address__street {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+}
+
 .address__link {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -684,6 +719,12 @@ body.modal-open {
 .address__link--margin {
   display: block;
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .joinus {
+    margin-top: 5px;
+  }
 }
 
 .joinus__appeal {
@@ -715,8 +756,19 @@ body.modal-open {
 }
 
 /* subscription section */
-.page-footer__subscription {
-  margin-left: auto;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer__subscription {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .subscription__appeal {
@@ -747,6 +799,13 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .subscription__input {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscription__input {
+    margin-bottom: 20px;
+    max-width: 450px;
   }
 }
 
