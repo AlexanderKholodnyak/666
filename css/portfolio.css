@@ -385,6 +385,13 @@ body.modal-open {
   padding-bottom: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .page-header__container {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -417,6 +424,12 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .burger-button {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-navigation__logo {
+    margin-right: 81px;
   }
 }
 
@@ -469,14 +482,31 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .header-navigation__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 14px;
     line-height: 1.14;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .nav-menu {
+  .header-navigation__nav-menu {
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-navigation__nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -486,6 +516,12 @@ body.modal-open {
   }
   .nav-menu__item--current-page {
     margin-bottom: 52px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-menu__item:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
@@ -506,7 +542,7 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .nav-menu__link {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -535,13 +571,19 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .header-navigation__nav-contacts {
+    margin-left: auto;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .nav-contacts__item:not(:last-child) {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .nav-contacts__item:not(:last-child) {
     margin-right: 50px;
   }
@@ -573,6 +615,12 @@ body.modal-open {
 
 .nav-contacts__icon {
   margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav-contacts__icon {
+    margin-right: 8px;
+  }
 }
 
 .page-footer__container {

@@ -1,7 +1,11 @@
 .page-header__container {
-  // @include vCenteredFlex();
   padding-top: 10px;
   padding-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
 }
 .page-header {
   border-bottom: 1px solid #ececec;
